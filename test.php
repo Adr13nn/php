@@ -9,15 +9,7 @@
     $sport = ['titre' => '', 'date' => '', 'contenu' =>''];
 
     // var_dump($science);
-
-    $tableau = [
-        [$science],
-        [$ecologie],
-        [$sport]
-    ];
-
-    var_dump($tableau)
-
+    // $tableau dans articles.php
 ?>
 
 <!DOCTYPE html>
