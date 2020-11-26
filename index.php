@@ -18,9 +18,7 @@
 
     var_dump($_GET)
 
-    if ( $_GET["page"] == true ) {
-        require 'science1.php';
-    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +26,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -38,13 +36,13 @@
 
     <div id="container">
         <ul id="menu">
-            <li><a href="science1.php?page=science">Science</a></li>
-            <li><a href="ecologie/ecologie.php?page=ecologie">Ecologie</a></li>
-            <li id="bsport"><a href="sport/sport1.php?page=sport">Sport</a> 
+            <li><a href="index.php?page=science">Science</a></li>
+            <li><a href="index.php?page=ecologie">Ecologie</a></li>
+            <li id="bsport"><a href="index.php?page=sport1">Sport</a> 
                 <ul id="sport">
-                    <li><a href="sport/sport1.php?page=sport">Voile</a> </li>
-                    <li><a href="sport/sport2.php?page=sport">Tennis</a> </li>
-                    <li><a href="sport/sport3.php?page=sport">Natation</a> </li>
+                    <li><a href="index.php?page=sport1">Voile</a> </li>
+                    <li><a href="index.php?page=sport2">Tennis</a> </li>
+                    <li><a href="index?page=sport3">Natation</a> </li>
                 </ul>
             </li>    
         </ul>
