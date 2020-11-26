@@ -1,25 +1,29 @@
 <?php
-    // $science = [
-    //     'titre' => 'Civilisations extraterrestres : plus de 26 millions de technosignatures détectées en quatre heures', 
-    //     'date' => '1 novembre 2020', 
-    //     'contenu' => 'article'];
 
-    // $ecologie = ['titre' => 'la fin du monde', 
-    //     'date' => '2020', 
-    //     'contenu' => 'FakeNews'];
+    var_dump($_GET);
 
-    // $sport = ['titre' => 'Record du monde', 
-    //     'date' => '2009', 
-    //     'contenu' =>'article'];
+    if(isset($_GET["page"])) {
 
-    // var_dump($science, $ecologie, $sport);
-    // $tableau dans articles.php
+        switch($_GET["page"]) {
+            case "science" : $pageAINCLURE = "science.php";
+            break;
+            case "ecologie" : $pageAINCLURE = "ecologie.php";
+            break;
+            case "sport1" : $pageAINCLURE = "sport1.php ";
+            break;
+            case "sport2" : $pageAINCLURE = "sport2.php";
+            break;
+            case "sport3" : $pageAINCLURE = "sport3.php";
+            break;
+            default : $pageAINCLURE = "science.php"
+        }
 
 
-    var_dump($_GET)
+    } else {
+        $pageAINCLURE = "science.php";
+    }
 
     
-
     
 ?>
 
@@ -50,8 +54,10 @@
         </ul>
         
     </div> 
+
     
-    <!-- <?php require 'PHP/'; ?> -->
+    
+    <?php require "PHP/$pageAINCLURE" ?>
 
 
 </body>
