@@ -19,6 +19,8 @@
     var_dump($_GET)
 
     
+
+    
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +51,7 @@
         
     </div> 
     
-    <!-- <?php require 'science/science1.php'; ?> -->
+    <!-- <?php require 'PHP/'; ?> -->
 
 
 </body>
