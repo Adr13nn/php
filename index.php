@@ -4,11 +4,15 @@
         'date' => '1 novembre 2020', 
         'contenu' => 'article'];
 
-    $ecologie = ['titre' => 'la fin du monde', 'date' => '2020', 'contenu' => 'FakeNews'];
+    $ecologie = ['titre' => 'la fin du monde', 
+        'date' => '2020', 
+        'contenu' => 'FakeNews'];
 
-    $sport = ['titre' => 'Record du monde', 'date' => '2009', 'contenu' =>'article'];
+    $sport = ['titre' => 'Record du monde', 
+        'date' => '2009', 
+        'contenu' =>'article'];
 
-    // var_dump($science);
+    var_dump($science, $ecologie, $sport);
     // $tableau dans articles.php
 ?>
 

@@ -1,9 +1,9 @@
 <?php
 
 $tableau = [
-        [$science],
-        [$ecologie],
-        [$sport]
+        ['$science'],
+        ['$ecologie'],
+        ['$sport']
     ];
 
     var_dump($tableau)
