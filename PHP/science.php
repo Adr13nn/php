@@ -19,19 +19,25 @@ require_once "articles.php";
 //     $html .= "<div class='img-cont'><img class='img-resp' src='" . $article["image"] . "'alt=''></div></article";
 // }
 
-// ?>
+// 
+
+
+
+?>
 
 <?php foreach($articles as $index => $article) : ?>
 
 <article>
     <h3><?= $article["titre"] ?></h3>
-    <p class="news main"><?= substr($article["description"], 0, 100) ?>...<a href="PHP/vuarticle.php">Lire la suite...</a></p>
-    <div class="art">
-        <div class="img-cont"><img class="img-resp" src= <?= $article["image"] ?> alt=""></div>
+    <p class=""><?= substr($article["description"], 0, 100) ?>...<a href="index.php?page=vuarticle&art=<?= $index ?>">Lire la suite...</a></p>
+    <div class="">
+        <div class=""><img class="" src= <?= $article["image"] ?> alt=""></div>
     </div>
 </article>
 
 <?php endforeach ?>
+
+
 
 
 

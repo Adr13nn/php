@@ -1,6 +1,6 @@
 <?php
 
-    // var_dump($_GET);
+    var_dump($_GET);
 
     if(isset($_GET["page"])) {
 
@@ -8,6 +8,8 @@
             case "science" : $pageAINCLURE = "science.php";
             break;
             case "ecologie" : $pageAINCLURE = "ecologie.php";
+            break;
+            case "vuarticle" : $pageAINCLURE = "vuarticle.php";
             break;
             case "sport1" : $pageAINCLURE = "sport1.php ";
             break;
