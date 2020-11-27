@@ -15,15 +15,12 @@
             break;
             case "sport3" : $pageAINCLURE = "sport3.php";
             break;
-            default : $pageAINCLURE = "science.php"
+            default : $pageAINCLURE = "science.php";
         }
-
 
     } else {
         $pageAINCLURE = "science.php";
     }
-
-    
     
 ?>
 
@@ -55,10 +52,9 @@
         
     </div> 
 
-    
-    
-    <?php require "PHP/$pageAINCLURE" ?>
-
+    <div>
+        <?php require "PHP/$pageAINCLURE" ?>
+    </div>
 
 </body>
 </html>
