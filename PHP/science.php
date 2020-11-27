@@ -2,15 +2,24 @@
 
 require_once "articles.php";
 
-var_dump($articles)
+// var_dump($articles);
+
+$html = "";
+
+// $len = sizeof($articles);
+// for($i =0; $i < $len; $i++) {
+
+//     $html .= "<article><h3>" . $articles[$i]["titre"] . "</h3";
+// }
+
+foreach($articles as $index => $article) {
+
+    $html .= "<article><h3>Article N°" . ($index + 1) . " " . $article["titre"] . "</h3>";
+    $html .= "<p class='news main'>" . $article['description'] . "<a href='index.php?page=ecologie'>Lire la suite...</a></p>";
+    $html .= "<div class='img-cont'><img class='img-resp' src='" . $article["image"] . "'alt=''></div></article";
+}
+
 ?>
 
-<h2>Les news</h2>
+<?= $html ?>;
 
-<article>
-    <h3><?= $articles[$article1[0]]; ?></h3>
-    <p class="news main">Culpa, distinctio inventore quia, quasi doloremque perferendis quaerat quisquam sunt consequatur alias nobis praesentium, unde nulla aut adipisci doloribus. <a href="index.php?page=article&art=0">Lire la suite...</a></p>
-    <div class="art">
-        <div class="img-cont"><img class="img-resp" src="img/art1.webp" alt=""></div>
-    </div>
-</article>

@@ -91,3 +91,13 @@ li {
 #bloc1 p {
     width: 50%;
 }
+
+article {
+    width: 80%;
+    margin : auto;
+}
+
+article img {
+    width: 100%;
+    height: 50vmin;
+}
